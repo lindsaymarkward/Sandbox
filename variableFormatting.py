@@ -3,7 +3,6 @@
 # filename = input("Enter the filename: ")
 filename = "README.md"
 inputFile = open(filename, 'r')
-# initialise a dictionary of unique words
 uniqueWords = {}
 
 # Add the unique words in the file to the list
@@ -15,6 +14,7 @@ for line in inputFile:
             uniqueWords[word] = 1
         else:
             uniqueWords[word] = frequency + 1
+# close file
 inputFile.close()
 
 # Print the unique words and their frequencies,
